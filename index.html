@@ -12,16 +12,107 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=PT+Serif:wght@400;700&family=Roboto:wght@300;400;500;900&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles.css" />
     <title>IQ test</title>
   </head>
   <body>
-    <header>
-      <img src="https://icons8.ru/icon/12371/меню" alt="">
+    <header class="header">
+      <div class="container">
+        <svg class="header__icon-menu" width="24" height="16">
+          <use href="./img/symbol-defs.svg#menu"></use>
+        </svg>
+      </div>
     </header>
+
     <main>
       <section class="section hero">
+        <div class="container hero--container">
+          <p class="hero__pre-title">Пройдите точный и быстрый</p>
+          <h1 class="hero__title">тест на определение IQ</h1>
+          <img class="hero__brains" src="./img/brain.png" alt="" />
+          <button class="button">Пройти тест</button>
+          <p class="hero__colored-text">
+            и получите рекомендации по развитию своего интеллекта
+          </p>
+          <p class="hero__white-text">
+            и улучшению финансового благосостояния и личной жизни
+          </p>
+          <button class="hero__detail-btn">
+            <svg class="hero__svg" width="15" height="15">
+              <use href="./img/symbol-defs.svg#arrow"></use>
+            </svg>
+          </button>
+          <p class="hero__navigate">Подробнее</p>
+        </div>
+      </section>
+
+      <section class="section info">
         <div class="container">
-          
+          <svg class="info__quote-right quote" width="27" height="27">
+            <use href="./img/symbol-defs.svg#quote"></use>
+          </svg>
+
+          <p class="info__text">
+            Профессиональный IQ-тест позволяет не только определить коэффициент
+            вашего интеллекта, но и выработать список рекомендаций для повышения
+            этого показателя.
+          </p>
+
+          <svg class="info__quote-left quote" width="27" height="27">
+            <use href="./img/symbol-defs.svg#quote"></use>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section decor-info">
+        <div class="container">
+          <p class="decor-info__txt">
+            Также по результатам теста
+            <span class="decor-info__txt--bold">вы получите</span> подробные
+            <span class="decor-info__txt--bold">советы</span> по определению
+            наиболее перспективной
+            <span class="decor-info__txt--bold"
+              >для вашего типа интеллекта сферы деятельности,</span
+            >
+            которая принесет вам скорейший финансовый результат.
+          </p>
+          <img src="./img/decor-info.png" alt="" class="decor-info__img" />
+          <button class="button">Пройти тест</button>
+        </div>
+      </section>
+
+      <section class="section thunder-info">
+        <div class="container">
+          <p class="thunder-info__text">
+            Прохождение теста займет у вас не более
+            <span class="thunder-info__text--colored">12 минут</span>, а его
+            результаты вы сможете
+            <span class="thunder-info__text--colored"
+              >использовать всю жизнь.</span
+            >
+          </p>
+          <p class="thunder-info__main-text">
+            Профессиональная интерпретация и детально
+            <span class="thunder-info__main-text--bold"
+              >проработанные рекомендации</span
+            >
+            позволят вам качественно
+            <span class="thunder-info__main-text--bold"
+              >изменить все аспекты своей жизни:</span
+            >
+            от финансового до любовного.
+          </p>
+          <button class="button button--transparent">Пройти тест</button>
+          <p class="thunder-info__foot">Ⓒ 2019</p>
         </div>
       </section>
     </main>
