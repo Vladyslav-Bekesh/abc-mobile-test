@@ -12,10 +12,10 @@
 
 .container {
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 
-  width: 320px;
+  width: 300px;
 }
 
 .section {
@@ -65,7 +65,33 @@ font-family: 'Yeseva One', cursive;
   border: 1px solid #ffffff;
   color: #fff;
 }
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
+  margin: 0;
   text-align: center;
 }
 
@@ -86,10 +112,6 @@ p {
 .hero {
   padding: 20px 0;
 }
-
-.hero--container {
-}
-
 .hero__pre-title {
   font-size: 18px;
   line-height: 24px;
@@ -155,6 +177,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .hero__svg {
   fill: currentColor;
